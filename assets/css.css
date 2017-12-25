@@ -118,7 +118,7 @@ LINE-HEIGHT: 24px;   DISPLAY: block;
 .zyright_title_weizhi a{ text-decoration:none; color:#222;}
 .zyright_nr{ padding:8px 15px 25px; line-height:24px;}
 .zyright_nr1{ padding:8px 15px 25px; line-height:24px;}
-.zyright_nr p{ text-indent:2em; padding:5px 0;}
+.zyright_nr p{ padding:5px 0;}
 .zyright_title_name{ font-weight:600; text-align:left; padding-left:20px; font-size:20px;font-family:"微软雅黑"; height:36px; line-height:36px; background:#c8a060; color:#590f0c; margin-bottom:25px;}
 .zyright_nr .fb dl{ line-height:25px; padding:10px 0;}
 .zyright_nr .fb dl dt span{ display:block; width:100px; text-align:right; float:left;}
