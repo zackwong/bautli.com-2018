@@ -3,17 +3,6 @@ $(function(){
 	imageAnimate();
 });
 
-// 注册登录后修改头部信息的过程,详细请看: login.js
-logined_callback['index'] = function(){
-	// 如果没有登录
-	if(get_cookie('userid') < 1){
-		return;
-	}
-	var style = getCookie('vip_isvip')=='1' ? 'color:#C80000;' : '';
-	var html = 'Hi，<a href="http://i.xunlei.com/" title="'+get_cookie('usernick')+'" style="'+style+'" target="_blank">'+get_cookie('usernick')+'</a>，欢迎来迅雷积分商城！<a href="javascript:logout();void(0);" title="退出">退出</a>';
-	$('div.userPanel').html(html);
-}
-
 // 大图转换
 function imageAnimate(){ 
 	var lbindex=0;
@@ -85,4 +74,3 @@ function imageAnimate(){
 		//$("#slide1_area").animate({left:left}, speed);
 	}
 }
-
