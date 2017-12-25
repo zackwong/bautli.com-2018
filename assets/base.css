@@ -1,0 +1,15 @@
+@charset "gb2312";
+body,html{margin:0;padding:0;font-size:13px; color:#000;}
+div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,form,fieldset,input,textarea,p,th,td,a,img,span,option,select{margin:0;padding:0;font-size:13px; }
+table{border-collapse:collapse;border-spacing:0}
+ol,ul,li,dl,dd,dt,option,select{list-style:none}
+body{font-family:Arial,'\5b8b\4f53','ËÎÌו';}
+img{vertical-align:middle;border:0}
+em,b{font-style:normal;font-weight:normal}
+a{text-decoration:none; color:#000;}
+a:hover{text-decoration:none;color:#fcdc97;}
+a{ text-decoration:none;  blr:expression(this.onFocus=this.blur()); /* IE Opera */ outline:none; /* FF Opera */ } a:focus{ -moz-outline-style: none; /* FF */ }
+h1,h2,h3,h4,h5,h6{font-size:13px;font-weight:normal;}
+.clearfix:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}* html .clearfix{zoom:1}
+.mar_left10{ margin-left:45px;}
+.f16{ font-size:16px; font-weight:bold;}

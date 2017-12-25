@@ -1,0 +1,56 @@
+---
+layout: article
+---
+<div class="home_area">
+  <div class="slider_preloader flex_center">
+    <div class="slider_preloader_inner"></div>
+  </div>
+  <div class="home_slider">{% if page.pic == 'two' %}
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-1.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-2.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></div>{% endif %}{% if page.pic == 'three' %}
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-1.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-2.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-3.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></div>{% endif %}{% if page.pic == 'four' %}
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-1.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-2.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-3.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-4.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-4s.jpg" alt="{{ page.title }}"></a></div>{% endif %}{% if page.pic == 'five' %}
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-1.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-1s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-2.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-2s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-3.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-3s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-4.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-4s.jpg" alt="{{ page.title }}"></a></div>
+    <div class="single_slide"><a data-fancybox="{{ page.title }}" data-caption="{{ page.title }}" href="/images/{{ page.type-en }}/{{ page.image }}-5.jpg"><img src="/images/{{ page.type-en }}/{{ page.image }}-5s.jpg" alt="{{ page.title }}"></a></div>{% endif %}
+  </div>
+</div>
+<div class="about_area spt">
+  <div class="container">
+    <div class="row section_title wow fadeInUp">
+      <div class="col-md-12">
+        <p class="text-center" style="margin-bottom:40px"><img src="/images/{{ page.type-en }}/{{ page.image }}-logo.jpg" alt="{{ page.title }}"></p>
+        <div class="col-md-7">
+          <div style="color:#777777;line-height:28px;font-size:16px;margin-bottom:20px">
+            <h4 style="color:#5fb446">{{ page.subtitle }}</h4>
+            {{ content }}
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="panel panel-success text-center">
+            <div class="panel-heading">
+              <h3 style="color:#000000">ENQUIRE ABOUT YOUR NEXT INVESTMENT</h3>
+            </div>
+            <div class="panel-body">
+              <h2>{{ site.address }}</h4>
+              <h2><a href="tel:{{ site.tel-a }}">{{ site.tel }}</a></h2>
+            </div>
+          </div>{% if page.parc == 'parc' %}
+          <a href="http://www.parchomes.com.au/{{ page.image }}/" target="_blank" class="btn btn-lg btn-warning btn-block" style="margin-top:20px">VISIT WEBSITE</a>{% else %}
+          <a href="#property-feedback" class="btn btn-lg btn-warning btn-block" style="margin-top:20px">ENQUIRE NOW</a>{% endif %}
+        </div>
+        <div class="col-md-12">
+          <p><a href="{{ page.map }}" target="_blank"><img style="margin-top:30px" src="/images/residential/{{ page.image }}-map.jpg" alt="{{ page.title }} Map"></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include property-feedback.html %}

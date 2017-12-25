@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.full_title %}{{ page.full_title }}{% else %}{% if page.title %}{{ page.title }}-{% endif %}{{ site.title }}{% endif %}</title>
+    <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/assets/base.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css.css">
+    <link rel="stylesheet" type="text/css" href="/assets/zxkf.css">
+    <script type="text/javascript" src="/assets/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/minify.js"></script>
+    <script type="text/javascript" src="/assets/imgRule.js"></script>
+    <script type="text/javascript" src="/assets/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="/assets/DD_belatedPNG.js"></script>
+    <script type="text/javascript" src="/assets/zxkf.js"></script>
+    <style type="text/css">
+      .imgs {
+          overflow:hidden;
+          vertical-align:middle;
+          text-align:center;
+          display:table-cell;
+      }
+    </style>
+    <!--[if IE]>
+    <style type="text/css">
+      .imgs i{
+          display:inline-block;
+          height:100%;
+          vertical-align:middle
+      }
+      .imgs img{
+          vertical-align:middle
+      }
+    </style>
+    <![endif]-->
+    <script type="text/javascript">
+    jQuery(document).ready(
+    function($){
+        $(".imgs img").lazyload({
+            placeholder : "images/loading.gif", 
+            effect      : "fadeIn"
+        });
+    });
+    </script>
+    <script type="text/javascript" src="/assets/index.js"></script>
+    <script type="text/javascript" src="/assets/index1.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="head">
+        <div class="logo fl"><img src="/images/assets/logo.png" class="pngfix"></div>
+        <div class="head_r">
+          <div class="head_tel">联系电话：{{ site.tel }}<br>陈&nbsp;&nbsp;&nbsp;经&nbsp;&nbsp;&nbsp;理：{{ site.mobile }}</div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div id="nav">
+      <ul>
+        <li class="sy"><a href="{{ site.url }}">网站首页</a></li>
+        <li><a href="{{ site.url }}/about/">公司简介</a></li>
+        <li><a href="{{ site.url }}/abysj/"><b>凹版印刷机</b></a></li>
+        <li><a href="{{ site.url }}/qzdjpj/"><b>全自动检品机</b></a></li>
+        <li><a href="{{ site.url }}/ptplbysj/"><b>PTP铝箔印刷机</b></a></li>
+        <li><a href="{{ site.url }}/tbj/"><b>涂布机</b></a></li>
+        <li><a href="{{ site.url }}/ftj/"><b>分条机</b></a></li>
+        <li><a href="{{ site.url }}/fhj/"><b>复合机</b></a></li>
+        <li><a href="{{ site.url }}/news/">新闻资讯</a></li>
+        <li><a href="{{ site.url }}/contact/">联系我们</a></li>
+        <div class="clearfix"></div>
+      </ul>
+    </div>
+    <div id="flash">
+      <div class="slide1_box">
+        <div class="slide1_area" id="slide1_area">
+          <div class="slide1_img"><img src="/images/home/banner1.jpg" width="1003" height="300"></div>
+          <div class="slide1_img"><img src="/images/home/banner2.jpg" width="1003" height="300"></div>
+          <div class="slide1_img"><img src="/images/home/banner3.jpg" width="1003" height="300"></div>
+        </div>
+        <div class="sHover">
+          <ul id="sHover">
+            <li class="s_on">1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div id="mainsy">
+      <div class="sleft fl">
+        <script type=text/javascript>
+        $(document).ready(function(){
+    
+        //滑动与类“menu_body”的元素，当鼠标悬停段
+        $("#firstpane .menu_body:eq(0)").show();
+        $("#firstpane .menu_head").mouseover(function(){
+            $(this).addClass("current").next("ul.menu_body").slideDown(500).siblings("ul.menu_body").slideUp("slow");
+            $(this).siblings().removeClass("current");
+        });
+        });
+        </script>
+        <div class="left_nav">
+          <div class="left_nav_title">产品分类</div>
+          <ul class="dh_ul menu_list pngfix" id="firstpane">
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/abysj/" class="pngfix">凹版印刷机</a></li>
+            <ul class="menu_body">
+              <li><a href="{{ site.url }}/abysj/ya6800b-s.html" class="pngfix">手动套色双头凹版印刷机</a></li>
+            </ul>
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/qzdjpj/" class="pngfix">全自动检品机</a></li>
+            <ul class="menu_body">
+              <li><a href="{{ site.url }}/qzdjpj/qzdzljpj.html" class="pngfix">全自动张力检品机</a></li>
+            </ul>
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/ptplbysj/" class="pngfix">PTP铝箔印刷机</a></li>
+            <ul class="menu_body">
+              <li><a href="{{ site.url }}/ptplbysj/k-l120.html" class="pngfix">湿式复合机K-L120</a></li>
+            </ul>
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/tbj/" class="pngfix">涂布机</a></li>
+              <ul class="menu_body">
+                <li><a href="{{ site.url }}/tbj/zztbj.html" class="pngfix">纸张涂布机</a></li>
+              </ul>
+              <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/ftj/" class="pngfix">分条机</a></li>
+              <ul class="menu_body">
+                <li><a href="{{ site.url }}/ftj/ql1300d.html" class="pngfix">QL1300D高速分条机</a></li>
+              </ul>
+              <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/fhj/" class="pngfix">复合机</a></li>
+              <ul class="menu_body">
+                <li><a href="{{ site.url }}/fhj/wrjfhj.html" class="pngfix">无容剂复合机</a></li>
+              </ul>
+            </ul>
+          </div>
+          <div class="left_contact">
+            <div class="left_nav_title">联系我们</div>
+              <div class="left_contact_nr">
+                <p><span class="font14">佛山市堡利莱机械设备有限公司</span></p>
+                <p>地址：{{ site.address }}</p>
+                <p>电话：{{ site.tel }}</p>
+                <p>传真：{{ site.tel }}</p>
+                <p>陈经理：{{ site.mobile }}</p>
+              </div>
+            </div>
+          </div>
+          {{ content }}
+    <div id="footer">
+      <div class="foot_nr">
+        <p>佛山市堡利莱机械设备有限公司 <a href="http://www.miibeian.gov.cn/" target="_blank">粤ICP备13018489号-1</a> <a href="{{ site.url }}/sitemap.xml">Sitemap</a></p>
+        <p>地址：{{ site.address }}&nbsp; 电话：{{ site.tel }}</p>
+        <p>技术支持：<a href="https://gdky.net">开源网络</a></p>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div id="floatTools" class="rides-cs hidden-xs" style="height:158px;">
+      <div class="floatL">
+        <a id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:0px;display:block" href="javascript:void(0);">展开</a>
+        <a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:0px;display:none" href="javascript:void(0);">收缩</a>
+      </div>
+      <div id="divFloatToolsView" class="floatR" style="display: none;height:138px;width: 140px;">
+        <div class="cn">
+          <h4 class="titZx">在线客服<br>陈经理<br><div align="center"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/images/assets/qq.gif" alt="产品联系" title="产品联系"></a></div></h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

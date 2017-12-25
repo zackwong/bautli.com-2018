@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% if page.category == 'migration' %}<img src="/images/migration/migration-bg.jpg" alt="{{ page.title }}">{% endif %}
+<div class="breadcrumb_area">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>{{ page.title }}</h1>
+        <ul class="brc">
+          <li><a href="{{ site.url }}">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{ content }}
