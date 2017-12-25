@@ -1,17 +1,13 @@
 ---
 layout: default
 ---
-{% if page.category == 'migration' %}<img src="/images/migration/migration-bg.jpg" alt="{{ page.title }}">{% endif %}
-<div class="breadcrumb_area">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>{{ page.title }}</h1>
-        <ul class="brc">
-          <li><a href="{{ site.url }}">Home</a></li>
-        </ul>
-      </div>
-    </div>
+<div class="zyright fr">
+  <div class="sright_title">
+    <div class="sright_name fl"><span class="title_cn">企业简介</span></div>
+    <div class="zyright_title_weizhi fr">当前位置：<a href="{{ site.url }}">首页</a> - <a href="{{ site.url }}/{{ page.type-en }}/">{{ page.type }}</a> - <a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="zyright_nr">
+    {{ content }}
   </div>
 </div>
-{{ content }}
