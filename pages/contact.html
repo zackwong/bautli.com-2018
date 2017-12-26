@@ -1,45 +1,12 @@
 ---
 layout: pages
 permalink: /contact/
-category: contact
-title: Contact Us
-keywords: Bristar Group
-description: Contact us at Beistar Group. If you need to get in touch with us we would love to hear from you.
+type-en: contact
+title: 联系我们
+keywords: 堡利莱印刷机械
+description: 堡利莱印刷机械
 ---
-<div class="form_area sp single_page">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 form_h">
-        <div class="contact_form">
-          <form role="form" action="{{ site.oswweb-mail-url }}/bristargroup-com-au-contact-feedback.php" method="POST">
-            <div class="form-group clearfix"><p>Your name*</p><input type="text" placeholder="Enter your full name" name="fullname"></div>
-            <div class="form-group clearfix"><p>Email address*</p><input type="email" placeholder="eg: john@email.com" name="email"></div>
-            <div class="form-group clearfix"><p>Phone number</p><input type="tel" placeholder="eg: +617 3345 7208" name="phone"></div>
-            <div class="form-group clearfix"><p>Message</p><textarea name="xinxi" placeholder="Write your message"></textarea></div>
-            <div class="form-group clearfix"><button type="submit" class="button hvr-bounce-to-right"><i class="fa fa-long-arrow-right"></i> Send message</button></div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-7 form_h">
-        <div class="contact_info">
-          <div class="single_contact">
-            <p style="font-size:22px;color:#5fb446"><i class="fa fa-map-marker fa-2x"></i></p>
-            <span style="color:#9b9b9b">{{ site.address }}</span>
-          </div>
-          <div class="single_contact">
-            <p style="font-size:22px;color:#5fb446"><i class="fa fa-phone fa-2x"></i></p>
-            <span><a href="tel:{{ site.tel-a }}" style="color:#9b9b9b">{{ site.tel }} (Overseas)</a></span>
-            <span><a href="tel:{{ site.mobile-a }}" style="color:#9b9b9b">{{ site.mobile }} (Enquiry Line)</a></span>
-          </div>
-          <div class="single_contact">
-            <p style="font-size:22px;color:#5fb446"><i class="fa fa-envelope fa-2x"></i></p>
-            <span><a href="mailto:{{ site.email }}" style="color:#9b9b9b">{{ site.email }}</a></span>
-          </div>
-          <div class="single_contact">
-            <a href="https://goo.gl/maps/EpV7ynkjYvJ2" target="_blank"><img src="/images/contact/map.jpg" alt="Google Map"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<p><span style="font-size: medium">地址：{{ site.address }}</span></p>
+<p><span style="font-size: medium">联系电话：{{ site.tel }}</span></p>
+<p><span style="font-size: medium">陈经理：{{ site.mobile }}</span></p>
+<p><a href="http://j.map.baidu.com/sd3Vy" target="_blank"><img src="{{ site.url }}/images/contact/map.jpg" alt="堡利莱百图地图" width="740" height="549"></a></p>
