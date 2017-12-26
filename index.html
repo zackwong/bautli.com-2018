@@ -86,7 +86,7 @@ full_title: 堡利莱印刷机械
         <div class="clearfix"></div>
       </div>
       <ul class="sright_3_nr">{% for post in site.categories["industry-news"] limit:6 %}
-        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y年%m月%d日" }}]</span></li>{% endfor %}
+        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y-%m-%d" }}]</span></li>{% endfor %}
       </ul>
     </div>
     <div class="sright_3_new2 fr">
@@ -95,7 +95,7 @@ full_title: 堡利莱印刷机械
         <div class="clearfix"></div>
       </div>
       <ul class="sright_3_nr">{% for post in site.categories["technical"] limit:6 %}
-        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y年%m月%d日" }}]</span></li>{% endfor %}
+        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y-%m-%d" }}]</span></li>{% endfor %}
       </ul>
     </div>
   </div>

@@ -3,12 +3,17 @@ layout: news-article
 permalink: /news/technical5.html
 type-en: news
 type: 技术分享
-title: 凹版印刷机主要结构
-keywords: 凹版印刷机主要结构
-description: 凹版印刷机主要结构
+title: 分条机工作原理
+keywords: 分条机工作原理
+description: 分条机工作原理
 ---
-<p align="center"><img src="/images/news/{{ page.image }}-1.jpg" alt="{{ page.title }}"></p>
-<p align="center"><img style="margin-top:30px" src="/images/news/{{ page.image }}-2.jpg" alt="{{ page.title }}"></p>
-<p align="center"><img style="margin-top:30px" src="/images/news/{{ page.image }}-3.jpg" alt="{{ page.title }}"></p>
-<p align="center"><img style="margin-top:30px" src="/images/news/{{ page.image }}-4.jpg" alt="{{ page.title }}"></p>
-<p align="center"><a href="http://www.parchomes.com.au/sunnybankhills/" target="_blank"><img style="margin-top:30px" src="/images/news/{{ page.image }}-5.jpg" alt="{{ page.title }}"></a></p>
+<p>1.恒张力控制原理</p>
+<p>对于收放卷过程中恒张力控制的实质是需要知道负载在运行当中卷径的变化，由于卷径变化，导致为了维持负载的运行，分体机需要电机的输出转矩要跟着卷径的变化而变化。对于V系列变频器而言，由于能够做转矩控制，因此能够完成收卷恒张力的控制。V系列变频器提供了三路模拟量输进端口，AUI、AVI、ACI。这三路模拟量输进口能够定义为多种功能，因此，可以任选一路作为转矩给定，另外一路作为速度限制。0~10v对应变频器输出0~电机额定转矩，这样通过调整0~10v的电压就能够完成恒张力的控制。而杜宇分条机，计算卷径的部分是通过张力控制器来计算的，当然用PLC架构来实现也是没有题目的。也就是说，可以通过在人机或文本上设定张力，通过PLC计算卷径，T=F*D/2，所以可以算出需要电机输出的转矩大小，通过模拟量输出接到V系列变频器的转矩给定端就可以了。</p>
+<p>2.同步转速计算</p>
+<p>由于我们知道变频器工作在低频时，分条机交流异步电机的特性不好，激活转矩低而且分线性，因此在收卷的整个过程中要尽量避免收卷电机工作在2HZ以下。因此收卷电机有个最低速度的限制。对于四级电机而已其同步转速计算如下:n1=30f1/p=n1=1500r/min=2HZ/50HZ=N/1500=N=60rpm/min</p>
+<p>3.限速运行</p>
+<p>当达到最大卷径时，可以求出收卷整个过程中运行的最低速：</p>
+<p>V=π*D*n/i=Vmin=3.14*1.2*60/9=25.12m/min</p>
+<p>张力控制时，分条机要对速度进行限制，否则会出现飞车，因此要限速运行。</p>
+<p>4.张力与转矩的计算</p>
+<p>假如F*D/2=T/i(F--张力，D--卷径，T--转矩，i--减速比)，=F=2*T*i/D对于3.7KW的交流电机，其额定转矩的计算如下：T=9550*P/n=T=24.88N.m所以Fmax=2*24.88*9/0.6=74.64N(T--电机的额定转矩，P--电机的额定功率，n==电机的额定转速)</p>
