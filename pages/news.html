@@ -1,29 +1,11 @@
 ---
 layout: pages
 permalink: /news/
-category: about
-title: News
+type-en: news
+title: 新闻资讯
+keywords: 堡利莱印刷机械
+description: 堡利莱印刷机械
 ---
-<div class="blog_area sp">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 post_col">
-        <div class="row masonry-wrap">{% for post in site.categories["news"] %}
-          <article class="col-md-6 masonry-grid wow fadeInUp">
-            <a href="{{ site.url }}{{ post.url }}" class="post_img">
-              <img src="/images/news/{{ post.image }}.jpg" alt="{{ post.title }}">
-            </a>
-            <div class="entry_header">
-              <a class="entry_date">{{ post.date | date:"%d %b %Y" }}</a>
-            </div>
-            <div class="post_content">
-              <a href="{{ site.url }}{{ post.url }}" class="h3">{{ post.title }}</a>
-              <p></p>
-              <a href="{{ site.url }}{{ post.url }}" class="button-2">Continue Reading <i class="fa fa-angle-right"></i></a>
-            </div>
-          </article>{% endfor %}
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<ol class="zyright_nr_ol">{% for post in site.categories["news"] %}
+  <li><a href="{{ site.url }}{{ post.url }}" class="fl">[{{ post.type }}]{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y年%m月%d日" }}]</span></li>{% endfor %}
+</ol>

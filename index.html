@@ -85,8 +85,8 @@ full_title: 堡利莱印刷机械
         <div class="sright_name fl"><span class="title_cn">行业资讯</span><span class="title_en">Industry News</span></div>
         <div class="clearfix"></div>
       </div>
-      <ul class="sright_3_nr">
-        <li><a href="{{ site.url }}/news/industry-news6.html" class="fl">凹版印刷机常见故障</a><span class="fr">[2014-01-01]</span></li>
+      <ul class="sright_3_nr">{% for post in site.categories["industry-news"] limit:6 %}
+        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y年%m月%d日" }}]</span></li>{% endfor %}
       </ul>
     </div>
     <div class="sright_3_new2 fr">
@@ -94,8 +94,8 @@ full_title: 堡利莱印刷机械
         <div class="sright_name fl"><span class="title_cn">技术交流</span><span class="title_en">Technical</span></div>
         <div class="clearfix"></div>
       </div>
-      <ul class="sright_3_nr">
-        <li><a href="{{ site.url }}/news/technical6.html" class="fl">分条机应用范围</a><span class="fr">[2014-01-01]</span></li>
+      <ul class="sright_3_nr">{% for post in site.categories["technical"] limit:6 %}
+        <li><a href="{{ site.url }}{{ post.url }}" class="fl">{{ post.title }}</a><span class="fr">[{{ post.date | date:"%Y年%m月%d日" }}]</span></li>{% endfor %}
       </ul>
     </div>
   </div>
