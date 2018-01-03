@@ -107,28 +107,28 @@
           <div class="left_nav_title">产品分类</div>
           <ul class="dh_ul menu_list pngfix" id="firstpane">
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/abysj/" class="pngfix">凹版印刷机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/abysj/ya6800b-s.html" class="pngfix">手动套色双头凹版印刷机</a></li>
+            <ul class="menu_body">{% for post in site.categories["abysj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/qzdjpj/" class="pngfix">全自动检品机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/qzdjpj/qzdzljpj.html" class="pngfix">全自动张力检品机</a></li>
+            <ul class="menu_body">{% for post in site.categories["qzdjpj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/ptplbysj/" class="pngfix">PTP铝箔印刷机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/ptplbysj/k-l120.html" class="pngfix">湿式复合机K-L120</a></li>
+            <ul class="menu_body">{% for post in site.categories["ptplbysj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/tbj/" class="pngfix">涂布机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/tbj/zztbj.html" class="pngfix">纸张涂布机</a></li>
+            <ul class="menu_body">{% for post in site.categories["tbj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/ftj/" class="pngfix">分条机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/ftj/ql1300d.html" class="pngfix">QL1300D高速分条机</a></li>
+            <ul class="menu_body">{% for post in site.categories["ftj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/fhj/" class="pngfix">复合机</a></li>
-            <ul class="menu_body">
-              <li><a href="{{ site.url }}/fhj/wrjfhj.html" class="pngfix">无容剂复合机</a></li>
+            <ul class="menu_body">{% for post in site.categories["fhj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
           </ul>
         </div>
