@@ -68,6 +68,7 @@
         <li><a href="{{ site.url }}/tbj/"><b>涂布机</b></a></li>
         <li><a href="{{ site.url }}/ftj/"><b>分条机</b></a></li>
         <li><a href="{{ site.url }}/fhj/"><b>复合机</b></a></li>
+        <li><a href="{{ site.url }}/zdhj/"><b>自动化机</b></a></li>
         <li><a href="{{ site.url }}/news/">新闻资讯</a></li>
         <li><a href="{{ site.url }}/contact/">联系我们</a></li>
         <div class="clearfix"></div>
@@ -128,6 +129,10 @@
             </ul>
             <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/fhj/" class="pngfix">复合机</a></li>
             <ul class="menu_body">{% for post in site.categories["fhj"] %}
+              <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
+            </ul>
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/zdhj/" class="pngfix">自动化机</a></li>
+            <ul class="menu_body">{% for post in site.categories["zdhj"] %}
               <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
           </ul>

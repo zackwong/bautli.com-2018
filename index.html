@@ -118,6 +118,20 @@ full_title: 堡利莱印刷机械
                                     <td height="25" colspan="2" align="center" valign="middle" >{{ post.title }}</td>
                                   </tr>
                                 </table>
+                              </td>{% endfor %}{% for post in site.categories["zdhj"] %}
+                              <td width="155" height="130" align="center" valign="middle" style="padding:0 6px;">
+                                <table width="22%" height="152" border="0" cellpadding="0" cellspacing="0">
+                                  <tr>
+                                    <td width="94%" height="105" colspan="2" align="center" valign="middle"style="border:1px solid #ccc;">
+                                      <a href="{{ site.url }}{{ post.url }}">
+                                        <img src="{{ site.url }}/images/products/{{ post.image }}-small.jpg" alt="{{ post.title }}" width="225" height="143" hspace="10" vspace="0" border="0"  title="{{ post.title }}">
+                                      </a>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td height="25" colspan="2" align="center" valign="middle" >{{ post.title }}</td>
+                                  </tr>
+                                </table>
                               </td>{% endfor %}
                             </tr>
                           </table>
