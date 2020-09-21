@@ -9,13 +9,11 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="/assets/base.css">
     <link rel="stylesheet" type="text/css" href="/assets/css.css">
-    <link rel="stylesheet" type="text/css" href="/assets/zxkf.css">
     <script type="text/javascript" src="/assets/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/minify.js"></script>
     <script type="text/javascript" src="/assets/imgRule.js"></script>
     <script type="text/javascript" src="/assets/jquery.lazyload.js"></script>
     <script type="text/javascript" src="/assets/DD_belatedPNG.js"></script>
-    <script type="text/javascript" src="/assets/zxkf.js"></script>
     <style type="text/css">
       .imgs {
           overflow:hidden;
@@ -68,7 +66,7 @@
         <li><a href="{{ site.url }}/tbj/"><b>涂布机</b></a></li>
         <li><a href="{{ site.url }}/ftj/"><b>分条机</b></a></li>
         <li><a href="{{ site.url }}/fhj/"><b>复合机</b></a></li>
-        <li><a href="{{ site.url }}/zdhj/"><b>自动化机</b></a></li>
+        <li><a href="{{ site.url }}/zdhsb/"><b>自动化设备</b></a></li>
         <li><a href="{{ site.url }}/news/">新闻资讯</a></li>
         <li><a href="{{ site.url }}/contact/">联系我们</a></li>
         <div class="clearfix"></div>
@@ -131,8 +129,8 @@
             <ul class="menu_body">{% for post in site.categories["fhj"] %}
               <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
-            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/zdhj/" class="pngfix">自动化机</a></li>
-            <ul class="menu_body">{% for post in site.categories["zdhj"] %}
+            <li class="menu_head current" style="font-weight:bold;"><a style="color:#0f75bd;" href="{{ site.url }}/zdhsb/" class="pngfix">自动化设备</a></li>
+            <ul class="menu_body">{% for post in site.categories["zdhsb"] %}
               <li><a href="{{ site.url }}{{ post.url }}" class="pngfix">{{ post.title }}</a></li>{% endfor %}
             </ul>
           </ul>
@@ -156,17 +154,6 @@
         <p>Copyright © 2012-2020 佛山市堡利莱机械设备有限公司 <a href="http://www.beian.miit.gov.cn" target="_blank">粤ICP备18083322号-1</a> <a href="{{ site.url }}/sitemap.xml">Sitemap</a></p>
         <p>地址：{{ site.address }}&nbsp; 电话：{{ site.tel }}</p>
         <div class="clearfix"></div>
-      </div>
-    </div>
-    <div id="floatTools" class="rides-cs hidden-xs" style="height:158px;">
-      <div class="floatL">
-        <a id="aFloatTools_Show" class="btnOpen" title="查看在线客服" style="top:0px;display:block" href="javascript:void(0);">展开</a>
-        <a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服" style="top:0px;display:none" href="javascript:void(0);">收缩</a>
-      </div>
-      <div id="divFloatToolsView" class="floatR" style="display: none;height:138px;width: 140px;">
-        <div class="cn">
-          <h4 class="titZx">在线客服<br>陈经理<br><div align="center"><a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin={{ site.qq }}&site=qq&menu=yes"><img border="0" src="/images/assets/qq.gif" alt="产品联系" title="产品联系"></a></div></h4>
-        </div>
       </div>
     </div>
   </body>

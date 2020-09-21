@@ -232,56 +232,6 @@ a.xinwen:active {
 		font-weight:bold; 
 	}
 
-/*QQ*/	
-.zxkf {
- display: none;
-    height: 214px;
-    overflow: hidden;
-    width: 376px;
-}
-.zxkfbtn {
-cursor: pointer;
-position: absolute;
-background: url(../images/qq_1.png) no-repeat;
-width: 33px;
-height: 158px;
-top: 30px;
-left: 0;
-}
-.zxkfpanel {
-position: absolute;
-left: 33px;
-top: 0;
-}
-.zxkfpanel_h {
-display: none;
-}
-.zxkfpanel_c {
-background: url(../images/qq_2.png) repeat-y;
-width: 100px;
-height: 214px;
-position: relative;
-}
-.zxkfpanel_c_1 {
-position: absolute;
-font-size: 13px;
-padding: 10px;
-top: 68px;
-left: -5px;
-color: white;
-line-height: 20px;
-}
-.zxkfpanel_c_2 {
-position: absolute;
-top: 140px;
-left: 5px;
-font-size: 13px;
-color: white;
-}
-.zxkfpanel_f {
-display: none;
-}
-
 .simply-scroll-container { position: relative; }
 .simply-scroll-clip { position: relative; overflow: hidden; z-index: 2; }
 .simply-scroll-list { position: absolute; top: 0; left: 0; z-index: 1; overflow: hidden; margin: 0; padding: 0; list-style: none; }
